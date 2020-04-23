@@ -6,7 +6,7 @@ function showMessage(id, message){
 	document.getElementById(id).textContent = message;
 }
 
-function divisbleBy(numerator, denominator) {
+function divisibleBy(numerator, denominator) {
 	return (numerator % denominator) == 0;
 }
 
@@ -14,15 +14,15 @@ function divisbleBy(numerator, denominator) {
 function bishBosh() {
 	let answer = "";
 	for(let count = 1; count <= 100; count++) {
-		let divisbleBy3 = divisbleBy(count, 3);
-		let divisbleBy4 = divisbleBy(count, 4);
-		if (divisbleBy3 && divisbleBy4) {
+		let divisibleBy3 = divisibleBy(count, 3);
+		let divisibleBy4 = divisibleBy(count, 4);
+		if (divisibleBy3 && divisibleBy4) {
 			answer = answer + "Bish-Bosh"
 		}
-		else if (divisbleBy3) {
+		else if (divisibleBy3) {
 			answer = answer + "Bish";
 		}
-		else if (divisbleBy4) {
+		else if (divisibleBy4) {
 			answer = answer + "Bosh";
 		}
 		else {

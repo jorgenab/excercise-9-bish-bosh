@@ -10,7 +10,6 @@ function divisibleBy(numerator, denominator) {
 	return (numerator % denominator) == 0;
 }
 
-// Does not work
 function bishBosh() {
 	let answer = "";
 	for(let count = 1; count <= 100; count++) {
